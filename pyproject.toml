@@ -1,0 +1,24 @@
+[project]
+name = "apkit-init"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AmaseCocoa", email = "cocoa@amase.cc" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "copier>=9.11.3",
+    "httpx>=0.28.1",
+    "pathspec>=1.0.4",
+    "questionary>=2.1.1",
+    "rich>=14.3.1",
+    "typer>=0.21.1",
+]
+
+[project.scripts]
+apkit-init = "apkit_init:main"
+
+[build-system]
+requires = ["uv_build>=0.9.13,<0.10.0"]
+build-backend = "uv_build"
